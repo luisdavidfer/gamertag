@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+    background: linear-gradient(to bottom right, #e66465, #9198e5);
+}
+
+    /* Card content */
+
+#card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    padding: 30px 30px 10px 30px;
+    border-radius: 1%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    font: normal 14px/1.618em sans-serif;
+}
+#card > img{
+    width: 125px;
+    border-radius: 50%;
+    margin: 20px 0px 10px 0px;
+}
+#card p{
+    max-height: 250px;
+    overflow: overlay;
+}
+#card ul{
+    margin: 30px 0px 15px;
+    padding: 0px;
+}
+#card li{
+    list-style: none;
+    width: 15%;
+    display: inline-block;
+    margin: 10px 0px;
+}
+#card li img{
+    width: 30px;
+}
+
+    /* Custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }
+
+    /* Footer */
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: white;
+}
+footer span{
+    color: red;
+}
+
+footer a{
+    color: white;
+}
+    /* Portrait mobile */
+    
+@media (max-width: 400px){
+    #card{
+        width: 75%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 0%;
+    }
+    #card p{
+        max-height: 100px;
+    }
+}
+
+    /* Landscape mobile */
+
+
+@media (max-height: 350px){
+    #card img{
+        display: none;
+    }
+} 
+
+@media (max-height: 400px){
+    #card{
+        max-height: 90%;
+        padding: 20px;
+    }
+    #card img{
+        width: 100px;
+        margin: 0px;
+    }
+    #card h1{
+        margin: 0px;
+    }
+    #card p{
+        max-height: 75px;
+    }
+    #card ul{
+        margin: 0px;
+    }
+    #card li{
+        margin: 3px 0px;
+    }
+    footer p{
+        margin: 5px;
+    }
+}
